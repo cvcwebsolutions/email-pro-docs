@@ -1,4 +1,4 @@
-![Banner](.github/images/banner.png)
+![Banner](.github/images/banner.jpg)
 # ✉️ Email Pro
 
 EmailPro is a powerful FilamentPHP plugin designed to seamlessly synchronize and manage emails within your application.
