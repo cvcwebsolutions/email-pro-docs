@@ -83,6 +83,14 @@ GOOGLE_CLIENT_ID=YOUR_GOOGLE_CLIENT_ID
 GOOGLE_CLIENT_SECRET=YOUR_GOOGLE_CLIENT_SECRET
 GOOGLE_REDIRECT_URI="https://your_domain.com/mail/oauth/callback/google"
 ```
+#### Add Google credentials in `config/services.php`:
+```php
+'google' => [
+    'client_id' => env('GOOGLE_CLIENT_ID'),
+    'client_secret' => env('GOOGLE_CLIENT_SECRET'),
+    'redirect' => env('GOOGLE_REDIRECT_URI'),
+],
+```
 #### Publishing Configuration and Migrations
 Publish the config file:
 ```bash
@@ -101,7 +109,7 @@ php artisan vendor:publish --tag="email-pro-views"
 ##### Updating User Model
 Add the <span style="color: orange;">*HasEmailProviders*</span> trait to the User model:
 ```php
-use Cvcwebsolutions\EmailPro\Traits\HasEmailProviders;
+use Cvcwebsolutions\EmailPro\Support\Traits\HasEmailProviders;
 use Illuminate\Database\Eloquent\Model;
 
 YourUserModel extends Model {
