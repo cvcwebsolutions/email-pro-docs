@@ -188,7 +188,7 @@ Now we have Client ID and Client Secret, this credential we will use Installatio
 ![images](.github/images/google/img_7.webp)
 
 ## Features & Updates
-  - Tenancy (WIP)
+  - SMTP (WIP)
 ## Community & Support
 
 [![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/channels/883083792112300104/1367712748611440691)  
